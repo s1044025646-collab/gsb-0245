@@ -1,0 +1,15 @@
+{
+  "name": "sparse-matrix-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地稀疏整数矩阵规范化与乘法后端（API + CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/matrix.test.js",
+    "demo": "npm run build && node dist/scripts/demo.js"
+  }
+}
+
+
